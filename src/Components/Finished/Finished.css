@@ -1,0 +1,20 @@
+﻿.Finished{
+    border-top: 1px solid black;
+    text-align:center;
+}
+.Finished button {
+        color: #fff !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: #ed3330;
+        padding: 10px;
+        border-radius: 5px;
+        display: inline-block;
+        border: none;
+        transition: all 0.4s ease 0s;
+        margin-left: 10%;
+        margin-right: 10%;
+}
+.Finished button:hover {
+            background: #434343;
+}

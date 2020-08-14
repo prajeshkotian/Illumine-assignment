@@ -1,0 +1,54 @@
+﻿.Question {
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    margin: 10px;
+   /* margin-left: 25%;*/
+    box-sizing: border-box;
+    cursor: pointer;
+    position:relative;
+    height:70vh;
+}
+.Question1 {
+    width: 30%;
+    padding: 16px;
+    text-align: left;
+    align-items: center;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    margin: 10px;
+    /* margin-left: 25%;*/
+    box-sizing: border-box;
+    cursor: pointer;
+    position:relative;
+    margin-left:35%;
+    margin-right:35%;
+
+       
+}
+
+    .Question button {
+        color: #fff !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: #ed3330;
+        padding: 10px;
+        border-radius: 5px;
+        display: inline-block;
+        border: none;
+        transition: all 0.4s ease 0s;
+        margin-left: 10%;
+        margin-right: 10%;
+
+    }
+.Question button:hover {
+    background: #434343;
+    /*letter-spacing: 1px;*/
+    /*-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;*/
+}
