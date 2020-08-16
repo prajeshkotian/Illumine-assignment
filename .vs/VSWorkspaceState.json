@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\Assets",
+    "\\src\\Components",
+    "\\src\\Components\\Finished",
+    "\\src\\Components\\Output",
+    "\\src\\Components\\QuestionPage",
+    "\\src\\Containers",
+    "\\src\\Containers\\Quiz Page",
+    "\\src\\Store",
+    "\\src\\Store\\Reducers"
+  ],
+  "SelectedNode": "\\src\\Components\\Output\\Output.js",
+  "PreviewInSolutionExplorer": false
+}
