@@ -8,19 +8,22 @@
     border-radius: 50%;
     list-style: none;
     overflow: hidden;
-    background-color: #251d1d;
+    background-color: #808080;
+    z-index:0;
+   
 }
 .circle-low {
     position: absolute;
     border: 1px solid black;
     padding: 0;
     margin: 1em auto;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     list-style: none;
     overflow: hidden;
-    transform: translate(150%,130%);
+    transform: translate(115%,100%);
+    
 }
 
 .circle-middle {
@@ -34,6 +37,7 @@
     list-style: none;
     overflow: hidden;
     transform: translate(30%,25%);
+    
 }
 .circle li {
     overflow: hidden;
@@ -55,9 +59,9 @@
     transform: skewY(60deg) rotate(15deg);
     padding-top: 20px;
 }
-.text:hover{
+/*.text:hover{
     color:aqua;
-}
+}*/
 .circle li:first-child {
     transform: rotate(0deg) skewY(-60deg);
     border: 1px solid black;
@@ -120,41 +124,47 @@ li:nth-child(6) .text {
     border-radius: 50%;
     display: inline-block;
     transform: translate(0px,0px);
+    z-index:20;
 }
 .dot2 {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     background-color: #ff6a00;
     border-radius: 50%;
     display: inline-block;
     transform: translate(0px,75px);
+    /* transform: translate(0px,0px);*/
+    z-index: 20;
 }
 .dot3 {
-    height: 15px;
-    width: 15px;
+    height: 25px;
+    width: 25px;
     background-color: #4cff00;
     border-radius: 50%;
     display: inline-block;
     transform: translate(-3px,135px);
+    /*transform: translate(0px,0px);*/
+    z-index: 20;
 }
-.dot1:hover tooltiptext{
+/*.dot1:hover {*/
     /*display: block;*/
-    background-color:black;
-}
+    /*background-color:black;
+}*/
 
-.dot2:hover  {
+/*.dot2:hover  {*/
    /* display: block;*/
-    background-color: cyan;
-}
+    /*background-color: cyan;
+}*/
 
-.dot3:hover  {
+/*.dot3:hover  {*/
     /*display: block;*/
-    background-color: black;
-}
+    /*background-color: black;
+}*/
 
 .flexer{
     display:flex;
     width:50%;
+    object-fit:contain;
 
 }
 .Main{
@@ -162,7 +172,7 @@ li:nth-child(6) .text {
 }
 
 .SummaryBox {
-    width: 50%;
+    width: auto;
     padding: 16px;
     text-align: center;
     align-items: center;
@@ -174,25 +184,94 @@ li:nth-child(6) .text {
     cursor: pointer;
     position: relative;
     height: auto;
+    object-fit:contain;
 }
 
 .Body{
     display:flex;
+    object-fit:contain;
 }
+
 
 .hoverdata{
     padding: 10px;
+    object-fit:contain;
+}
+/*.text .tooltiptext {
+    visibility: hidden;
+    width: 50px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;*/
+    /* Position the tooltip text - see examples below! */
+    /*position: absolute;
+    z-index: 10;
+}*/
+
+.dot1 .tooltiptext {
+    visibility: hidden;
+    width: 50px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 10;
+    transform: rotate(30degree);
 }
 
-.dot1.tooltiptext {
+.dot2 .tooltiptext {
+    visibility: hidden;
+    width: 50px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 10;
+    
+}
+
+.dot3 .tooltiptext {
+    visibility: hidden;
+    width: 50px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 10;
+}
+
+.dot1:hover .tooltiptext {
+    visibility: visible;
+    z-index:10;
+}
+
+/*.dot2:hover .tooltiptext {
+    visibility: visible;
+}
+
+.dot3:hover .tooltiptext {
+    visibility: visible;
+}*/
+/*.dot1.tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 5px 0;*/
     /* Position the tooltip */
-    position: absolute;
+    /*position: absolute;
     z-index: 1;
-}
+}*/

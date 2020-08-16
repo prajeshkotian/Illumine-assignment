@@ -20,7 +20,7 @@ function Output(props) {
     //const result = ['0', '1', '0', '2', '0', '2'];
 
     console.log(props.result);
-    const summary = props.result.map(ele => {
+    const summary = props.result.map((ele,index) => {
         return (
             <li>
                 <div className='text'>
@@ -29,7 +29,7 @@ function Output(props) {
                     <div className={getCSSClass(ele)} >
 
 
-                        <span className="tooltiptext">{ ele}</span>
+                        <span className="tooltiptext">{index+': ' +ele}</span>
 
                         {/* <p className="img__descriptionma">hi</p> */}
                     </div>
